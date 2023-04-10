@@ -18,7 +18,7 @@ namespace Test
 
             obj.TemperatureC = 10;
             //Assert
-            Assert.AreEqual(0,obj.TemperatureC);
+            Assert.AreEqual(10,obj.TemperatureC);
         }
 
         [Test]
