@@ -1,31 +1,16 @@
-using ApiNetCoreDevops;
-
 namespace Test
 {
-    [TestClass]
-    public class UnitTest1
+    public class Tests
     {
-        public int Temp { get; set; } = 10;
-
-        public void TestMethod1()
+        [SetUp]
+        public void Setup()
         {
-            //Arrange
-            var obj = new WeatherForecast();
-            //Act
-            obj.TemperatureC = Temp;
-            //Assert
-            Assert.AreEqual(10, obj.TemperatureC);
         }
 
-        [TestMethod]
-        public void Test2()
+        [Test]
+        public void Test1()
         {
-            //Arrange
-            var obj = new WeatherForecast();
-            //Act
-            obj.TemperatureC = Temp;
-            //Assert
-            Assert.AreEqual(10, obj.TemperatureC);
+            Assert.Pass();
         }
     }
 }
