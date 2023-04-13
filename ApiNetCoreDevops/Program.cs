@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(
             {
                 Version = "v1.0",
                 Title = "Api CI CD",
-                Description = "Esta es una aplicacion que tiene un pipeline para integracion continua 2, el pipeline de publicacion se dispara al hacer un cambio en la rama 'main del proyecto' prueba con repositorio de Github",
+                Description = "Esta es una aplicacion que tiene un pipeline para integracion continua 4, el pipeline de publicacion se dispara al hacer un cambio en la rama 'main del proyecto' prueba con repositorio de Github",
                 TermsOfService = new Uri("https://example.com/terms"),
                 Contact = new OpenApiContact
                 {
