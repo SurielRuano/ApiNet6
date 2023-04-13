@@ -33,16 +33,16 @@ steps:
 #     platform: '$(buildPlatform)'
 #     configuration: '$(buildConfiguration)'
 
-# - task: DotNetCoreCLI@2
-#   inputs:
-#     command: 'publish'
-#     publishWebProjects: true
-#     workingDirectory: $(System.DefaultWorkingDirectory)/ApiNetCoreDevops
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    workingDirectory: $(System.DefaultWorkingDirectory)/ApiNetCoreDevops
     
-# - task: AzureRmWebAppDeployment@4
-#   inputs:
-#     ConnectionType: 'AzureRM'
-#     azureSubscription: 'Visual Studio Enterprise: BizSpark(060938d1-8184-461f-b90b-794c2a652330)'
-#     appType: 'webApp'
-#     WebAppName: 'TestStaging1Devops'
-#     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Visual Studio Enterprise: BizSpark(060938d1-8184-461f-b90b-794c2a652330)'
+    appType: 'webApp'
+    WebAppName: 'TestStaging1Devops'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
