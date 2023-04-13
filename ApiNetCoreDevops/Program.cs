@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(
             {
                 Version = "v1.0",
                 Title = "Api CI CD",
-                Description = "Camara mis niños ya se la saben",
+                Description = "Esta es una prueba",
                 TermsOfService = new Uri("https://example.com/terms"),
                 Contact = new OpenApiContact
                 {
