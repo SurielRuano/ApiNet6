@@ -46,3 +46,5 @@ steps:
     appType: 'webApp'
     WebAppName: 'TestStaging1Devops'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+  condition: 
+    and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
